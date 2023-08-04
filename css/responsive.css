@@ -1,0 +1,193 @@
+/*Teblet Layout*/
+@media only screen and (min-width:200px) and (max-width:850px){
+    .about_hero h1 {
+        font-size: 60px;
+    }
+    .inner_content h2 {
+        font-size: 24px;
+    }
+    .servise_des p {
+        margin: 0;
+    }
+    .inner_main_menu {
+        display: none;
+    }
+    .mobile_menu, .mobile_menu_container{
+        display: block;
+    }
+    .mobile_menu{
+        background: rgb(4, 4, 31);
+        min-height: 47px;
+    }
+    .menu_icon{
+        float: right;
+        margin-right: 20px;
+    }
+    .mobile_menu_container{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgb(4, 4, 31);
+        z-index: 200;
+        display: flex;
+        padding:70px 30px;
+        transition: all 400ms ease;
+    }
+    .mobile_menu_container.active{
+        left: 0;
+    }
+    .close_icom{
+        position: fixed;
+        top: 20px;
+        right: 25px;
+        pointer-events: none;
+        opacity: 0;
+        transition: all 400ms ease;
+    }
+    .mobile_menu_container.active .close_icom{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .mobile_menu_container ul li a{
+        color: #fff;
+        display: block;
+        padding: 5px 0;
+        font-size: 16px;
+    }
+    .mobile_menu_container ul{
+        width: 100%;
+        
+    }
+    .mobile_menu_container ul li{
+        width: 100%;
+        padding: 5px 0;
+        position: relative;
+        border: 2px solid #fff;
+    }
+    /*.mobile_menu_container ul ul{
+        display: none;
+    }
+    .mobile_menu_container ul .drop::after {
+        content: url(/Img/prev.png);
+        position: absolute;
+        top: 0;
+        right: 0px;
+        
+    }*/
+    .mobile_menu_container ul ul{
+        display: none;  
+    }
+    .mobile_menu_container ul li.drop ul{
+        display: block;  
+    }
+
+    ul{
+        position: relative;
+    }
+    .drop_icon{
+        position: absolute;
+        top: 0;
+        right: 4px;
+    }
+    .drop_icon img{
+        height: 30px;
+    }
+    
+
+
+
+
+
+
+
+}
+
+/*Mobile Layout*/
+@media only screen and (min-width:200px) and (max-width:480px){
+    .search_box {
+        width: 55%;
+    }
+    .mini_menu {
+        width: 100%;
+    }
+    .inner_top_bar {
+        gap: 2%;
+        flex-direction: column-reverse;
+    }
+    .search_box form {
+        height: 40px;
+    }
+        .inner_hero_area {
+        flex-direction: column;
+    }
+    .hero_img{
+        width: 100%;
+    }
+    .about_hero {
+        width: 90%;
+    }
+    .about_hero h1 {
+        font-size: 50px;
+        padding-top: 28px;
+    }
+    
+    .about_hero p {
+        margin-top: 5px;
+    }
+    .inner_content {
+        flex-direction: column;
+    }
+    .inner_content h2 {
+        font-size: 27px;
+        text-align: center;
+    }
+    .about_us img {
+        margin: 20px auto 0;
+        display: block;
+    }
+    
+    .about_us {
+        width: 85%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .servise_area {
+        width: 85%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .testimonial {
+        width: 85%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .inner_footer {
+        width: 80%;
+        flex-direction: column;
+    }
+    .tweet_area {
+        margin-bottom: 50px;
+    }    
+    .quick_link {
+        margin-bottom: 50px;
+    }
+    .blog_post {
+        margin-bottom: 50px;
+    }
+    .tweet, .links, .blog{
+        margin-left: 30px;
+    }
+    .inner_main_footer {
+        flex-direction: column;
+    }
+    .inner_main_footer .right p{
+        text-align: right;
+    }
+    
+}
